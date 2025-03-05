@@ -1,0 +1,155 @@
+/* reset các thuộc tính mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Đặt màu nền cho body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Định dạng Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff; /* Màu nền trắng */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm shadow cho đẹp */
+}
+
+header .logo img {
+    width: 150px; /* Logo có thể lớn hơn một chút */
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 20px; /* Cách nhau giữa các mục menu */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333; /* Màu chữ menu */
+    font-weight: bold;
+}
+
+header .cart img {
+    width: 30px;
+}
+
+/* Phần banner sản phẩm */
+.product-banner {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #b6e0f2; /* Màu xanh nhạt */
+    border-radius: 15px;
+    margin: 20px; /* Khoảng cách từ các phần khác */
+}
+
+.product-banner .product-info {
+    width: 50%;
+}
+
+.product-banner .product-info h1 {
+    font-size: 36px; /* Kích thước chữ lớn hơn */
+    color: #00796b; /* Màu chữ sản phẩm */
+    margin-bottom: 10px;
+}
+
+.product-banner .product-info p {
+    font-size: 18px;
+    color: #555; /* Màu chữ mô tả */
+    margin-bottom: 20px;
+}
+
+.product-banner .rating {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-banner .certificates img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.product-banner .product-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Định dạng nút "Mua Ngay" */
+.buy-now {
+    background-color: #ffeb3b; /* Màu vàng */
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.buy-now:hover {
+    background-color: #fbc02d; /* Màu vàng đậm khi hover */
+}
+
+/* Phần footer */
+footer {
+    background-color: #00796b; /* Màu nền xanh đậm */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .contact-info p {
+    margin: 5px 0;
+}
+
+footer .social-media a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
+
+/* Phần chia màu nền */
+.product-banner:nth-child(odd) {
+    background-color: #c8e6c9; /* Màu xanh nhạt cho phần dưới */
+}
+
+/* Responsive: Chuyển layout khi màn hình nhỏ */
+@media (max-width: 768px) {
+    .product-banner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-banner .product-info {
+        text-align: center;
+    }
+
+    .product-banner .product-info h1 {
+        font-size: 28px;
+    }
+
+    .product-banner .product-info p {
+        font-size: 16px;
+    }
+
+    .product-banner .product-image img {
+        width: 250px;
+    }
+}
