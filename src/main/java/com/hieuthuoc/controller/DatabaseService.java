@@ -11,7 +11,7 @@ public class DatabaseService {s
     public void checkDatabaseConnection() {
         try {
             // Thử kết nối đến cơ sở dữ liệu
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hieuthuoc_db01", "root", "ongco13123");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hieuthuoc_db01", "root", "2210900139");
             System.out.println("Kết nối thành công!");
         } catch (SQLException e) {
             e.printStackTrace();
