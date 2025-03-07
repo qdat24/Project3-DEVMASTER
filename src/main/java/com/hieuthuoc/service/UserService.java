@@ -1,9 +1,9 @@
-package com.foodstore.service;
+package com.hieuthuoc.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.foodstore.model.User;
-import com.foodstore.repository.UserRepository;
+import com.hieuthuoc.model.User;
+import com.hieuthuoc.repository.UserRepository;
 
 @Service
 public class UserService {
